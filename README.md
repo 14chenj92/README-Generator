@@ -18,7 +18,7 @@
 
   ## License
   MIT
-  MIT(https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit-0/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit-0/)
   undefined
 
   ## Contribution
@@ -26,3 +26,7 @@
 
   ## Test
   1
+
+  ## Questions
+  If you have any questions, contact 1 at 1
+  or (github.com/1).
