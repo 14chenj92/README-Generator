@@ -2,13 +2,13 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "MIT") {
-    return `${license}(https://img.shields.io/badge/License-MIT-yellow.svg)](${renderLicenseLink(license)})`
+    return `[![License: ${license}](https://img.shields.io/badge/License-MIT-yellow.svg)](${renderLicenseLink(license)})`
   }
 if (license === "BSD") {
-  return `${license}(https://img.shields.io/badge/license-BSD-green)](${renderLicenseLink(license)})`
+  return `[![License: ${license}](https://img.shields.io/badge/license-BSD-green)(${renderLicenseLink(license)})`
 }
 if (license === "GPL") {
-  return `${license}(https://img.shields.io/badge/license-GPL-blue)](${renderLicenseLink(license)})`
+  return `[![License: ${license}](https://img.shields.io/badge/license-GPL-blue)(${renderLicenseLink(license)})`
 }
   if (!license) {
     return "";
@@ -66,6 +66,10 @@ function generateMarkdown(data) {
 
   ## Test
   ${data.test}
+
+  ## Questions
+  If you have any questions, contact ${data.username} at ${data.email}
+  or (github.com/${data.username}).
 `;
 }
 
