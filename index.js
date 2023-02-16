@@ -76,7 +76,7 @@ const questions = [
             return false;
         }}
     },
-    { // need to add license choices
+    { 
         type: 'list',
         name: 'license',
         message: 'Please choose a license for your project.',
@@ -117,7 +117,7 @@ const questions = [
 
 // function to add README
 const writeToFile = data => {
-    fs.writeFile('README.md', data, error => {
+    fs.writeFile('sampleREADME.md', data, error => {
         if (error) {
             console.log(error);
             return;

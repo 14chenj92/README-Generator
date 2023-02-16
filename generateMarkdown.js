@@ -1,22 +1,20 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// adds license badge
 function renderLicenseBadge(license) {
   if (license === "MIT") {
     return `[![License: ${license}](https://img.shields.io/badge/License-MIT-yellow.svg)](${renderLicenseLink(license)})`
   }
 if (license === "BSD") {
-  return `[![License: ${license}](https://img.shields.io/badge/license-BSD-green)(${renderLicenseLink(license)})`
+  return `[![License: ${license}](https://img.shields.io/badge/license-BSD-green)](${renderLicenseLink(license)})`
 }
 if (license === "GPL") {
-  return `[![License: ${license}](https://img.shields.io/badge/license-GPL-blue)(${renderLicenseLink(license)})`
+  return `[![License: ${license}](https://img.shields.io/badge/license-GPL-blue)](${renderLicenseLink(license)})`
 }
   if (!license) {
     return "";
 }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// adds license link to license badge
 function renderLicenseLink(license) {
   if (license === "MIT") {
     return "https://opensource.org/license/mit-0/"
@@ -32,7 +30,7 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// layout of sample READme
 function generateMarkdown(data) {
   return `# ${data.title}
 
